@@ -22,11 +22,6 @@ class File(Base):
             "name": self.filename,
             "path": url_for("uploaded_file", filename=self.filename)
         }
-        #file = {
-            #"id": self.id,
-            #"name": self.name,
-        #}
-        #return file
 
 class Song(Base):
     __tablename__ = "songs"
